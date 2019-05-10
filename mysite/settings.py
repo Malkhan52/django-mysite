@@ -12,6 +12,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'valueuno.apps.ValueunoConfig',
     'uploads.apps.UploadsConfig',
     'polls.apps.PollsConfig',
     'django.contrib.admin',

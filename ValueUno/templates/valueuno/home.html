@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Value Uno Admin</title>
+
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    {% load static %}
+    <link type="text/css" rel="stylesheet" href="{% static 'valueuno/css/style.css' %}">
+</head>
+<body>
+    <h1>Welcome to ValueUno Admin!</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="btn btn-lg btn-primary">
+                    <a href="{% url 'valueuno:addNew' %}">Add New Recommendations</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="btn btn-lg btn-success">
+                    <a href="{% url 'valueuno:addNew'%}">Active Recommendations</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="btn btn-lg btn-danger">
+                    <a href="{% url 'valueuno:addNew'%}">Squared off Recommendations</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

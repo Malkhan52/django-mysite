@@ -5,6 +5,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
+    path('valueunoadmin/', include('valueuno.urls')),
     path('uploads/', include('uploads.urls')),
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
